@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+#particles canvas{
+  z-index: -1;
+  height:100%;
+  width: 100%;
+  position: absolute;
+}
+
+@keyframes fade-up{
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(1);
+  }
+
+  100% {
+    opacity: 0.7;
+    transform: translateY(0px) scale(1);
+  }
+
+}
+
+@keyframes fade-down{
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+  
+  50% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
+
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+
+}
+.words{
+  font-family: "Inter", serif;
+  color: white;
+  opacity: 0.7;
+  font-size: 3rem;
+  font-weight: 600;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10% auto; 
+  animation:fade-up 2.5s;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgb(255,255,255,0.1))
+}
+
+.words2{
+  font-family: "Inter", serif;
+  color: white;
+  opacity: 1;
+  font-size: 8rem;
+  font-weight: 800;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5%; 
+  animation:fade-down 4.5s;
+  -webkit-box-reflect: below -50px linear-gradient(transparent, rgb(255,255,255,0.1))
+}
+
+.social-icons{
+  opacity: 0.9;
+  margin: 1%; 
+  animation:fade-down 5.5s;
+}
+
+.words4{
+  color:white;
+  opacity: 0.9;
+  align-items: right;
+  justify-content: right;
+  animation:fade-down 5.5s;
+  margin: 2%;
+}
+.words5{
+  color:white;
+  opacity: 0.005;
+  align-items: right;
+}
